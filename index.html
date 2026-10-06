@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naveen Raj | Systems Engineer, Cloud &amp; Platform Operations</title>
+<meta name="description" content="Systems Engineer with 7+ years in cloud, application and production support across AWS, GCP and Azure.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f7;--surface:#fff;--ink:#14202b;--mute:#566574;--line:#d5dde3;--ok:#0f6b63;--okbg:#dff1ee;--warn:#b86e00}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10181f;--surface:#17222b;--ink:#e8eef2;--mute:#9aabb8;--line:#2a3945;--ok:#4fd1bf;--okbg:#14332f;--warn:#f0a73a}}
+:root[data-theme=dark]{--bg:#10181f;--surface:#17222b;--ink:#e8eef2;--mute:#9aabb8;--line:#2a3945;--ok:#4fd1bf;--okbg:#14332f;--warn:#f0a73a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Schibsted Grotesk",system-ui,sans-serif}
+a{color:var(--ok)}
+:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+header.top{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+header.top b{font-weight:800}
+nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.95rem}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--ink)}
+button.theme{font:inherit;font-size:.85rem;background:none;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:.25rem .6rem;cursor:pointer}
+.hero{padding:3.5rem 0 2.5rem}
+.pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--okbg);color:var(--ok);font-weight:700;font-size:.9rem;padding:.3rem .8rem;border-radius:99px}
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--ok);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--ok)}70%,100%{box-shadow:0 0 0 .6rem transparent}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}html{scroll-behavior:auto}}
+h1{font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.04;font-weight:800;letter-spacing:-.03em;margin:1rem 0 .6rem}
+.lead{max-width:38rem;color:var(--mute);font-size:1.15rem;margin:0 0 1.6rem}
+.btns{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.btn{display:inline-block;padding:.6rem 1.1rem;border-radius:8px;font-weight:700;text-decoration:none;border:1px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.board{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.row{display:grid;grid-template-columns:1fr auto;gap:.2rem 1rem;padding:.9rem 1.1rem;border-top:1px solid var(--line);align-items:baseline}
+.row:first-child{border-top:0}
+.row .k{font-weight:700}
+.row .d{color:var(--mute);font-size:.92rem;grid-column:1}
+.row .v.red{color:#d92d20}
+:root[data-theme=dark] .row .v.red{color:#ff6b5e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .row .v.red{color:#ff6b5e}}
+.row .v{font-weight:800;font-size:1.5rem;color:var(--ok);grid-row:1/3;grid-column:2;text-align:right}
+section{padding:2.6rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 1.2rem}
+.job{display:grid;grid-template-columns:9.5rem 1fr;gap:.4rem 1.5rem;padding:1.3rem 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{color:var(--mute);font-size:.92rem}
+.job h3{margin:0;font-size:1.15rem}
+.job .org{color:var(--mute);margin:.1rem 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin:.35rem 0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.4rem}
+.skills h3{font-size:1rem;margin:0 0 .5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tags span{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:.15rem .55rem;font-size:.9rem}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2rem}
+.two p{margin:.2rem 0}
+form.rec{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.2rem;margin-top:1.6rem;max-width:36rem}
+form.rec h3{margin:0 0 .8rem;font-size:1.15rem}
+form.rec label{display:block;font-weight:700;font-size:.92rem;margin:.8rem 0 .25rem}
+form.rec input,form.rec textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:.55rem .7rem}
+form.rec button{font:inherit;margin-top:1rem;cursor:pointer}
+.hp{position:absolute;left:-9999px}
+#fmsg{margin:.8rem 0 0;font-weight:700}
+footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+@media (max-width:640px){.job{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <b>Naveen Raj</b>
+  <nav aria-label="Sections"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode">Theme</button>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <span class="pill"><span class="dot"></span>Open to new roles</span>
+    <h1>I keep production platforms running.</h1>
+    <p class="lead">Systems Engineer with 7+ years in cloud, application and platform operations support across AWS, GCP and Azure. I find root causes, run incidents end to end, and keep enterprise SaaS reliable for global customers.</p>
+    <div class="btns">
+      <a class="btn main" href="#contact">Get in touch</a>
+      <a class="btn" href="resume.pdf" download="Naveen_Raj_Resume.pdf">Download resume</a>
+    </div>
+    <div class="board" role="list" aria-label="Key results">
+      <div class="row" role="listitem"><span class="k">SLA compliance</span><span class="d">Held across all production environments</span><span class="v red">95%+</span></div>
+      <div class="row" role="listitem"><span class="k">P1 incident recurrence</span><span class="d">Reduced through structured root cause analysis</span><span class="v">−25%</span></div>
+      <div class="row" role="listitem"><span class="k">Release management</span><span class="d">Fewer release errors with GitLab CI/CD and Jenkins pipelines</span><span class="v red">−95%</span></div>
+    </div>
+  </div>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <article class="job">
+      <div class="when">Jul 2022 – Present</div>
+      <div>
+        <h3>Systems Engineer, Cloud &amp; Application Support</h3>
+        <p class="org">Iron Mountain Services, Bengaluru</p>
+        <ul>
+          <li>Provide L3 support for enterprise SaaS platforms on GCP and AWS: Nuxeo CSP, INSIGHT DXP, ECM and GenAI DXP.</li>
+          <li>Own incident response and root cause analysis, cutting P1 recurrence by 25%.</li>
+          <li>Support cloud infrastructure on GKE, EKS, EC2, S3 and GCP Storage, with change management aligned to Planning Increments.</li>
+          <li>Manage releases and built CI/CD pipelines with GitLab CI/CD and Jenkins, plus Blue-Green and Canary rollouts, cutting release errors by 95%.</li>
+          <li>Onboard customers by building container images, managing patch cycles and automating CSP workflows with developers and engineering.</li>
+          <li>Monitor platform health with Grafana and Datadog, and investigate logs in CloudWatch, GCP Cloud Logging, ELK and Splunk. Part of the 24x7 on-call rotation.</li>
+          <li>Validate APIs with Postman and Swagger, and report defects to Engineering and QA with reproduction steps and logs.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="job">
+      <div class="when">Jan 2022 – Jul 2022</div>
+      <div>
+        <h3>Associate III, Cloud Infrastructure Services</h3>
+        <p class="org">UST Global, Trivandrum</p>
+        <ul>
+          <li>Handled L2/L3 support across 100+ incidents a month within SLA and ITIL practices. Recurring outages dropped 30%.</li>
+          <li>Managed Zscaler ZIA/ZPA configurations, including DNS and SSL proxy policies, and supported platform migrations.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="job">
+      <div class="when">Aug 2020 – Dec 2021</div>
+      <div>
+        <h3>Associate II, Cloud Infrastructure Services</h3>
+        <p class="org">UST Global, Bengaluru</p>
+        <ul>
+          <li>Monitored production and handled L1/L2 incidents, keeping uptime above 98% for 200+ global users.</li>
+          <li>Worked with cross-functional teams to fix recurring issues, cutting repeat incidents by 20%.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="job">
+      <div class="when">Sep 2019 – Aug 2020</div>
+      <div>
+        <h3>Consultant, IT Support Engineer</h3>
+        <p class="org">Vibrant Screen Pvt Ltd, Bengaluru</p>
+        <ul>
+          <li>Supported hardware, software and enterprise systems: onboarding, access provisioning, server patching and backups.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Cloud</h3><div class="tags"><span>AWS</span><span>GCP</span><span>Azure</span><span>GKE</span><span>Compute Engine</span><span>Cloud Armor</span><span>EC2</span><span>EKS</span><span>S3</span><span>WAF</span></div></div>
+      <div><h3>Containers &amp; DevOps</h3><div class="tags"><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Terraform</span><span>Jenkins</span><span>GitLab CI/CD</span></div></div>
+      <div><h3>Monitoring &amp; logs</h3><div class="tags"><span>Grafana</span><span>Datadog</span><span>ELK</span><span>Splunk</span><span>CloudWatch</span><span>Cloud Logging</span></div></div>
+      <div><h3>Support &amp; incident tools</h3><div class="tags"><span>ServiceNow</span><span>OpsGenie</span><span>xMatters</span><span>JIRA</span><span>ITIL</span><span>RCA</span></div></div>
+      <div><h3>Platforms &amp; APIs</h3><div class="tags"><span>Nuxeo ECM</span><span>Nuxeo DXP</span><span>CSP</span><span>Postman</span><span>Swagger</span></div></div>
+      <div><h3>Systems &amp; scripting</h3><div class="tags"><span>Linux</span><span>Bash</span><span>Python</span><span>PostgreSQL</span><span>MongoDB</span><span>Zscaler</span><span>IAM</span><span>DNS</span></div></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; recognition</h2>
+    <div class="two">
+      <div>
+        <p><b>B.E. Computer Science &amp; Engineering</b><br>Anna University, 2015 – 2018</p>
+        <p><b>Diploma in Computer Engineering</b><br>TN-DOTE, 2012 – 2015</p>
+      </div>
+      <div>
+        <p><b>Mountaineer of the Year 2025</b><br>Iron Mountain Services</p>
+        <p><b>Mountaineer of the Month, Sep 2024</b><br>Iron Mountain Services</p>
+        <p><a href="https://www.cloudskillsboost.google/public_profiles/REPLACE_ME">Google Cloud skill badges</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Get the full details of my experience, skills and certifications.</p>
+    <div class="btns">
+      <a class="btn main" href="resume.pdf" download="Naveen_Raj_Resume.pdf">Download resume (PDF)</a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View in browser</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Based in Bengaluru, India. The best way to reach me is email.</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:naveence@outlook.com">naveence@outlook.com</a>
+      <a class="btn main" href="mailto:naveenraj.rk97@gmail.com">naveenraj.rk97@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/REPLACE_ME">LinkedIn</a>
+    </div>
+    <form class="rec" id="rec" action="https://api.web3forms.com/submit" method="POST">
+      <h3>Recruiters: send me a role</h3>
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New recruiter enquiry from your portfolio">
+      <input type="hidden" name="from_name" value="Portfolio form">
+      <label for="f-name">Your name</label>
+      <input id="f-name" name="name" required autocomplete="name">
+      <label for="f-company">Company name</label>
+      <input id="f-company" name="company" required autocomplete="organization">
+      <label for="f-role">Job role</label>
+      <input id="f-role" name="job_role" required>
+      <label for="f-phone">Phone (with country code)</label>
+      <input id="f-phone" name="phone" type="tel" required autocomplete="tel">
+      <label for="f-msg">Message (optional)</label>
+      <textarea id="f-msg" name="message" rows="3"></textarea>
+      <input type="checkbox" class="hp" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn main" type="submit">Send details</button>
+      <p id="fmsg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Naveen Raj</div></footer>
+
+<script>
+document.getElementById('rec').addEventListener('submit',function(e){
+  e.preventDefault();var f=e.target,m=document.getElementById('fmsg');
+  if(f.access_key.value==='YOUR_ACCESS_KEY'){m.textContent='Form not connected yet. Please email me directly.';return}
+  m.textContent='Sending...';
+  fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}})
+    .then(function(r){return r.json()})
+    .then(function(d){if(d.success){f.reset();m.textContent='Thanks! I will get back to you soon.'}else{m.textContent='Could not send. Please email me directly.'}})
+    .catch(function(){m.textContent='Could not send. Please email me directly.'});
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+var r=document.documentElement;
+try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+document.getElementById('theme').addEventListener('click',function(){
+  var dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+  var n=dark?'light':'dark';r.setAttribute('data-theme',n);
+  try{localStorage.setItem('theme',n)}catch(e){}
+});
+</script>
+</body>
+</html>
