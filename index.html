@@ -54,6 +54,10 @@ h2{font-size:1.7rem;letter-spacing:-.02em;margin:0 0 1.2rem}
 .job .org{color:var(--mute);margin:.1rem 0 .6rem}
 .job ul{margin:0;padding-left:1.1rem}
 .job li{margin:.35rem 0}
+.cust{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:.8rem}
+.cust div{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:10px;padding:.9rem 1rem}
+.cust b{display:block;font-size:1.15rem}
+.cust span{color:var(--mute);font-size:.9rem}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.4rem}
 .skills h3{font-size:1rem;margin:0 0 .5rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem}
@@ -85,7 +89,7 @@ footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);fo
     <p class="lead">Systems Engineer with 7+ years in cloud, application and platform operations support across AWS, GCP and Azure. I find root causes, run incidents end to end, and keep enterprise SaaS reliable for global customers.</p>
     <div class="btns">
       <a class="btn main" href="#contact">Get in touch</a>
-      <a class="btn" href="naveenrajrk_Sep2026.pdf" download="Naveen_Raj_Resume.pdf">Download resume</a>
+      <a class="btn" href="resume.pdf" download="Naveen_Raj_Resume.pdf">Download resume</a>
     </div>
     <div class="board" role="list" aria-label="Key results">
       <div class="row" role="listitem"><span class="k">SLA compliance</span><span class="d">Held across all production environments</span><span class="v red">95%+</span></div>
@@ -102,6 +106,7 @@ footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);fo
         <h3>Systems Engineer, Cloud &amp; Application Support</h3>
         <p class="org">Iron Mountain Services, Bengaluru</p>
         <ul>
+          <li><b>Supported premium customer projects end to end, including Hydro One, Boeing and Polaris Solutions.</b></li>
           <li>Provide L3 support for enterprise SaaS platforms on GCP and AWS: Nuxeo CSP, INSIGHT DXP, ECM and GenAI DXP.</li>
           <li>Own incident response and root cause analysis, cutting P1 recurrence by 25%.</li>
           <li>Support cloud infrastructure on GKE, EKS, EC2, S3 and GCP Storage, with change management aligned to Planning Increments.</li>
@@ -146,12 +151,23 @@ footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);fo
     </article>
   </section>
 
+  <section id="customers">
+    <h2>Premium customer projects</h2>
+    <p>Supported end to end, from onboarding and releases to incident response.</p>
+    <div class="cust">
+      <div><b>Hydro One</b><span>Premium customer</span></div>
+      <div><b>Boeing</b><span>Premium customer</span></div>
+      <div><b>Polaris Solutions</b><span>Premium customer</span></div>
+    </div>
+  </section>
+
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
       <div><h3>Cloud</h3><div class="tags"><span>AWS</span><span>GCP</span><span>Azure</span><span>GKE</span><span>Compute Engine</span><span>Cloud Armor</span><span>EC2</span><span>EKS</span><span>S3</span><span>WAF</span></div></div>
       <div><h3>Containers &amp; DevOps</h3><div class="tags"><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Terraform</span><span>Jenkins</span><span>GitLab CI/CD</span></div></div>
       <div><h3>Monitoring &amp; logs</h3><div class="tags"><span>Grafana</span><span>Datadog</span><span>ELK</span><span>Splunk</span><span>CloudWatch</span><span>Cloud Logging</span></div></div>
+      <div><h3>AI-assisted engineering</h3><div class="tags"><span>Cursor Agent</span><span>LLM prompt engineering</span><span>Vibe coding</span><span>D2D bug fixing</span><span>Improving &amp; speeding up solutions</span></div></div>
       <div><h3>Support &amp; incident tools</h3><div class="tags"><span>ServiceNow</span><span>OpsGenie</span><span>xMatters</span><span>JIRA</span><span>ITIL</span><span>RCA</span></div></div>
       <div><h3>Platforms &amp; APIs</h3><div class="tags"><span>Nuxeo ECM</span><span>Nuxeo DXP</span><span>CSP</span><span>Postman</span><span>Swagger</span></div></div>
       <div><h3>Systems &amp; scripting</h3><div class="tags"><span>Linux</span><span>Bash</span><span>Python</span><span>PostgreSQL</span><span>MongoDB</span><span>Zscaler</span><span>IAM</span><span>DNS</span></div></div>
@@ -177,8 +193,8 @@ footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);fo
     <h2>Resume</h2>
     <p>Get the full details of my experience, skills and certifications.</p>
     <div class="btns">
-      <a class="btn main" href="naveenrajrk_Sep2026.pdf download="Naveen_Raj_Resume.pdf">Download resume (PDF)</a>
-      <a class="btn" href="naveenrajrk_Sep2026.pdf target="_blank" rel="noopener">View in browser</a>
+      <a class="btn main" href="resume.pdf" download="Naveen_Raj_Resume.pdf">Download resume (PDF)</a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View in browser</a>
     </div>
   </section>
 
@@ -188,11 +204,11 @@ footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);fo
     <div class="btns">
       <a class="btn main" href="mailto:naveence@outlook.com">naveence@outlook.com</a>
       <a class="btn main" href="mailto:naveenraj.rk97@gmail.com">naveenraj.rk97@gmail.com</a>
-      <a class="btn" href="https://www.linkedin.com/in/naveen-rajendiran-995680bb">LinkedIn</a>
+      <a class="btn" href="https://www.linkedin.com/in/REPLACE_ME">LinkedIn</a>
     </div>
     <form class="rec" id="rec" action="https://api.web3forms.com/submit" method="POST">
       <h3>Recruiters: send me a role</h3>
-      <input type="hidden" name="access_key" value="71cd3fba-57ec-4a57-9616-df7f87443427">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
       <input type="hidden" name="subject" value="New recruiter enquiry from your portfolio">
       <input type="hidden" name="from_name" value="Portfolio form">
       <label for="f-name">Your name</label>
